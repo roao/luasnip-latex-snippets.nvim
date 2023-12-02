@@ -1,3 +1,4 @@
+-- only in math mode, autoexpand
 local M = {}
 
 local ls = require("luasnip")

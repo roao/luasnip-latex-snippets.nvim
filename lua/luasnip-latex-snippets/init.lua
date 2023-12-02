@@ -40,12 +40,12 @@ local _autosnippets = function(is_math, not_math)
   local autosnippets = {}
 
   for _, s in ipairs({
-    "math_wRA_no_backslash",
+    -- "math_wRA_no_backslash",
     "math_rA_no_backslash",
     "math_wA_no_backslash",
     "math_iA_no_backslash",
     "math_iA",
-    "math_wrA",
+    -- "math_wrA",
   }) do
     vim.list_extend(
       autosnippets,
