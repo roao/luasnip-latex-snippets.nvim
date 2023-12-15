@@ -10,6 +10,10 @@ function M.retrieve(not_math)
   }) --[[@as function]]
 
   return {
+    parse_snippet({ trig = "$$", name = "math" }, "$ $1 $$0"),
+    parse_snippet({ trig = "((", name = "bracket1" }, "( $1 )$0"),
+    parse_snippet({ trig = "{{", name = "bracket2" }, "{$1} $0"),
+    parse_snippet({ trig = "[[", name = "bracket3" }, "[$1]$0"),
     parse_snippet({ trig = "mk", name = "Math" }, "\\( ${1:${TM_SELECTED_TEXT}} \\)$0"),
     parse_snippet({ trig = "dm", name = "Block Math" }, "\\[\n\t${1:${TM_SELECTED_TEXT}}\n.\\] $0"),
   }

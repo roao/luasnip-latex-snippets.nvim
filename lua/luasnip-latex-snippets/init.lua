@@ -82,8 +82,12 @@ M.setup_tex = function(is_math, not_math)
   })
 
   local math_i = require("luasnip-latex-snippets/math_i").retrieve(is_math)
+  local math_inbs = require("luasnip-latex-snippets/math_i_no_backslash").retrieve(is_math)
+  local nmath_i = require("luasnip-latex-snippets/nmath_i").retrieve(not_math)
 
   ls.add_snippets("tex", math_i, { default_priority = 0 })
+  ls.add_snippets("tex", nmath_i, { default_priority = 0 })
+  ls.add_snippets("tex", math_inbs, { default_priority = 0 })
 
   ls.add_snippets("tex", _autosnippets(is_math, not_math), {
     type = "autosnippets",

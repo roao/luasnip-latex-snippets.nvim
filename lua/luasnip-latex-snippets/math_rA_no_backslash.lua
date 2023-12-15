@@ -58,7 +58,7 @@ function M.retrieve(is_math)
 
   s = ls.extend_decorator.apply(ls.snippet, M.decorator) --[[@as function]]
 
-  vim.list_extend(snippets, greek_postfix_completions())
+  -- vim.list_extend(snippets, greek_postfix_completions())
   vim.list_extend(snippets, postfix_completions())
   vim.list_extend(snippets, { build_snippet(postfix_trig, postfix_node, "q?quad", 200) })
 
