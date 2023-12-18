@@ -30,8 +30,9 @@ function M.retrieve(not_math)
       { trig = "col", name = "textcolor" },
       "\\textcolor{$1}{$2}$0"
     ),
-    parse_snippet({ trig = "eq:", name = "math" }, "Eq.\\ref{$1} $0"),
-    parse_snippet({ trig = "eqs:", name = "math" }, "Eqs.\\ref{$1} $0"),
+    parse_snippet({ trig = "eq:", name = "math" }, "Eq.\\ref{$1}$0"),
+    parse_snippet({ trig = "eqs:", name = "maths" }, "Eqs.\\ref{$1}$0"),
+    parse_snippet({ trig = "ref", name = "reference" }, "\\ref{$1}$0"),
     -- parse_snippet(
     --   { trig = "sequence", name = "Sequence indexed by n, from m to infinity" },
     --   "(${1:a}_${2:n})_{${2:n}=${3:m}}^{${4:\\infty}}"
