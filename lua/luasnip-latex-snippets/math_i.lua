@@ -107,135 +107,115 @@ function M.retrieve(is_math)
     ),
     parse_snippet(
       { trig = "pa", name = "partial" },
-      "\\partial"
+      "\\partial "
     ),
     parse_snippet(
       { trig = "al", name = "alpha" },
-      "\\alpha"
+      "\\alpha "
     ),
     parse_snippet(
       { trig = "be", name = "beta" },
-      "\\beta"
+      "\\beta "
     ),
     parse_snippet(
       { trig = "de", name = "delta" },
-      "\\delta"
+      "\\delta "
     ),
     parse_snippet(
       { trig = "DE", name = "Delta" },
-      "\\Delta"
+      "\\Delta "
     ),
     parse_snippet(
       { trig = "ep", name = "epsilon" },
-      "\\epsilon"
+      "\\epsilon "
     ),
     parse_snippet(
       { trig = "vep", name = "varepsilon" },
-      "\\varepsilon"
+      "\\varepsilon "
     ),
     parse_snippet(
       { trig = "ga", name = "gamma" },
-      "\\gamma"
+      "\\gamma "
     ),
     parse_snippet(
       { trig = "GA", name = "Gamma" },
-      "\\Gamma"
+      "\\Gamma "
     ),
     parse_snippet(
       { trig = "ph", name = "phi" },
-      "\\phi"
+      "\\phi "
     ),
     parse_snippet(
       { trig = "PH", name = "Phi" },
-      "\\Phi"
+      "\\Phi "
     ),
     parse_snippet(
       { trig = "vph", name = "varphi" },
-      "\\varphi"
+      "\\varphi "
     ),
     parse_snippet(
       { trig = "ka", name = "kappa" },
-      "\\kappa"
+      "\\kappa "
     ),
     parse_snippet(
       { trig = "la", name = "lambda" },
-      "\\lambda"
+      "\\lambda "
     ),
     parse_snippet(
       { trig = "LA", name = "Lambda" },
-      "\\Lambda"
-    ),
-    parse_snippet(
-      { trig = "mu", name = "mu" },
-      "\\mu"
-    ),
-    parse_snippet(
-      { trig = "nu", name = "nu" },
-      "\\nu"
-    ),
-    parse_snippet(
-      { trig = "pi", name = "pi" },
-      "\\pi"
+      "\\Lambda "
     ),
     parse_snippet(
       { trig = "rh", name = "rho" },
-      "\\rho"
+      "\\rho "
     ),
     parse_snippet(
       { trig = "ta", name = "tau" },
-      "\\tau"
+      "\\tau "
     ),
     parse_snippet(
       { trig = "si", name = "sigma" },
-      "\\sigma"
+      "\\sigma "
     ),
     parse_snippet(
       { trig = "Si", name = "Sigma" },
-      "\\Sigma"
+      "\\Sigma "
     ),
     parse_snippet(
       { trig = "om", name = "omega" },
-      "\\omega"
+      "\\omega "
     ),
     parse_snippet(
       { trig = "Om", name = "Omega" },
-      "\\Omega"
-    ),
-    parse_snippet(
-      { trig = "xi", name = "xi" },
-      "\\xi"
-    ),
-    parse_snippet(
-      { trig = "Xi", name = "Xi" },
-      "\\Xi"
+      "\\Omega "
     ),
     parse_snippet(
       { trig = "ps", name = "psi" },
-      "\\psi"
+      "\\psi "
     ),
     parse_snippet(
       { trig = "PS", name = "Psi" },
-      "\\Psi"
+      "\\Psi "
     ),
     parse_snippet(
       { trig = "ze", name = "zeta" },
-      "\\zeta"
+      "\\zeta "
     ),
     parse_snippet(
       { trig = "th", name = "theta" },
-      "\\theta"
+      "\\theta "
     ),
     parse_snippet(
       { trig = "TH", name = "Theta" },
-      "\\Theta"
+      "\\Theta "
     ),
     parse_snippet(
       { trig = "et", name = "eta" },
-      "\\eta"
+      "\\eta "
     ),
     parse_snippet(
       { trig = "na", name = "nabla" },
-      "\\nabla"
+      "\\nabla "
     ),
     -- parse_snippet(
     --   { trig = "sequence", name = "Sequence indexed by n, from m to infinity" },
