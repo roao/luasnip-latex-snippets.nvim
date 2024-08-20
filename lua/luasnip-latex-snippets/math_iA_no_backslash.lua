@@ -18,12 +18,15 @@ function M.retrieve(is_math)
   return {
     parse_snippet({ trig = "sq", name = "\\sqrt{}" }, "\\sqrt{${1:${TM_SELECTED_TEXT}}} $0"),
 
-    with_priority({ trig = "hat", name = "hat" }, "\\hat{$1}$0 "),
-    with_priority({ trig = "bar", name = "bar" }, "\\bar{$1}$0 "),
+    with_priority({ trig = "hat", name = "hat" }, "\\hat{$1}$0"),
+    with_priority({ trig = "bar", name = "bar" }, "\\bar{$1}$0"),
+    with_priority({ trig = "bm", name = "bm" }, "\\bm{$1}$0"),
+    with_priority({ trig = "ppx", name = "pa/pax" }, "\\frac{\\partial $1}{\\partial ${2:x}} $0"),
+    with_priority({ trig = "ppd", name = "ppd" }, "\\partial_{$1} $0"),
 
     parse_snippet({ trig = "inf", name = "\\infty" }, "\\infty"),
     parse_snippet({ trig = "inn", name = "in " }, "\\in "),
-    parse_snippet({ trig = "SI", name = "SI" }, "\\SI{$1}{$2}"),
+    -- parse_snippet({ trig = "SI", name = "SI" }, "\\SI{$1}{$2}"),
   }
 end
 
