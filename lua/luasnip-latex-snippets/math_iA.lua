@@ -151,7 +151,7 @@ function M.retrieve(is_math)
     parse_snippet({ trig = "...", name = "ldots", priority = 100 }, "\\ldots "),
     parse_snippet({ trig = "!>", name = "mapsto" }, "\\mapsto "),
     parse_snippet({ trig = "iff", name = "iff" }, "\\iff"),
-    parse_snippet({ trig = "siff", name = "short iff", priority = 100}, "\\Leftrightarrow"),
+    parse_snippet({ trig = "siff", name = "short iff", priority = 100 }, "\\Leftrightarrow"),
     parse_snippet({ trig = "ooo", name = "\\infty" }, "\\infty"),
     parse_snippet({ trig = "rij", name = "mrij" }, "(${1:x}_${2:n})_{${3:$2}\\in${4:\\N}}$0"),
     parse_snippet({ trig = "nabl", name = "nabla" }, "\\nabla "),
@@ -172,10 +172,8 @@ function M.retrieve(is_math)
     -- parse_snippet({ trig = "letw", name = "let omega" }, "Let $\\Omega \\subset \\C$ be open."),
     parse_snippet({ trig = "nnn", name = "bigcap" }, "\\bigcap_{${1:i \\in ${2: I}}} $0"),
     parse_snippet({ trig = "norm", name = "norm" }, "\\|$1\\|$0"),
-    parse_snippet({ trig = "<>", name = "hokje" }, "\\diamond "),
     parse_snippet({ trig = ">>", name = ">>" }, "\\gg"),
     parse_snippet({ trig = "<<", name = "<<" }, "\\ll"),
-
 
     parse_snippet({ trig = "xx", name = "cross" }, "\\times "),
 
@@ -210,6 +208,7 @@ function M.retrieve(is_math)
     parse_snippet({ trig = "!=", name = "not equals" }, "\\neq "),
     parse_snippet({ trig = "compl", name = "complement" }, "^{c}"),
     parse_snippet({ trig = "()", name = "bracket" }, "($1)$0"),
+    parse_snippet({ trig = "{}", name = "bracket" }, "{$1}$0"),
     parse_snippet(
       { trig = "((", name = "left( right)" },
       "\\left( ${1:${TM_SELECTED_TEXT}} \\right)$0"
@@ -219,7 +218,7 @@ function M.retrieve(is_math)
       "\\left[ ${1:${TM_SELECTED_TEXT}} \\right]$0"
     ),
     parse_snippet(
-      { trig = "<<", name = "left( right)" },
+      { trig = "<>", name = "left( right)" },
       "\\left\\langle ${1:${TM_SELECTED_TEXT}} \\right\\rangle$0"
     ),
     parse_snippet({ trig = "__", name = "subscript" }, "_{$1}$0"),
@@ -227,7 +226,6 @@ function M.retrieve(is_math)
     parse_snippet({ trig = "=>", name = "implies" }, "\\implies"),
     parse_snippet({ trig = "simp", name = "short implies" }, "\\Rightarrow"),
     parse_snippet({ trig = "=<", name = "implied by" }, "\\impliedby"),
-    parse_snippet({ trig = "<<", name = "<<" }, "\\ll"),
 
     parse_snippet({ trig = "<=", name = "leq" }, "\\le "),
     parse_snippet({ trig = ">=", name = "geq" }, "\\ge "),
