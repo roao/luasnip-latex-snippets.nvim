@@ -222,6 +222,7 @@ function M.retrieve(is_math)
       "\\left\\langle ${1:${TM_SELECTED_TEXT}} \\right\\rangle$0"
     ),
     parse_snippet({ trig = "__", name = "subscript" }, "_{$1}$0"),
+    parse_snippet({ trig = "$$", name = "math" }, "$ $1 $$0"),
     parse_snippet({ trig = "^^", name = "upscript" }, "^{$1}$0"),
     parse_snippet({ trig = "=>", name = "implies" }, "\\implies"),
     parse_snippet({ trig = "simp", name = "short implies" }, "\\Rightarrow"),
